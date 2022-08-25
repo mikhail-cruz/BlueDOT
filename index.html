@@ -13,26 +13,33 @@
 	<body>
 		<nav class="navbar navbar-expand-lg bg-light shadow-lg">
 			<div class="container">
-				<a class="navbar-brand" href="#"><span>Blue</span><span class="text-primary fw-bolder">DOT</span></a>
+				<!-- <a class="navbar-brand" href="#"><span>Blue</span><span class="text-primary fw-bold">DOT</span></a> -->
+				<a class="navbar-brand" href="#"
+					><span id="logo-brand" class="">Blue</span><span class="text-primary fw-bold">D<img src="/img/earth-icon.svg" alt="" id="earth" />T</span></a
+				>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Problems</a>
+							<a class="nav-link text-dark" href="#">Problems</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Feasible Solution</a></li>
+								<li><a class="dropdown-item" href="/html/startwithyourself.html">Start with Yourself</a></li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link">Solutions</a>
+							<a class="nav-link text-dark" href="/html/aboutUs.html">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Blogs</a>
+							<a class="nav-link text-dark">Blogs</a>
 						</li>
 					</ul>
 					<form class="d-flex" role="search">
@@ -90,7 +97,7 @@
 				<div class="container-fluid d-flex justify-content-between bg-black text-white">
 					<div class="m-auto text text-center p-4">
 						<h1>Our planet faces the interconnected crises of rapid climate change and biodiversity loss.</h1>
-						<button class="mt-4 lead btn btn-light">Read more...</button>
+						<a href="/html/content.html" class="mt-4 lead btn btn-light">Read more...</a>
 					</div>
 					<div class="">
 						<img src="/img/hero-earth.jpg" alt="" class="img" />
@@ -101,12 +108,13 @@
 
 		<div class="container">
 			<footer>
-				<p class="lead text-center my-auto p-3">Copyright &copy; 2022. All rights reserved.</p>
-				<div class="social-icons text-center h4 d-flex justify-content-center gap-5 pb-2">
+				<p class="text-center my-auto p-3 text-dark">Copyright &copy; 2022. All rights reserved.</p>
+				<div class="social-icons text-center h3 d-flex justify-content-center gap-5 pb-2">
 					<i class="fa-brands fa-facebook text-primary"></i>
 					<i class="fa-brands fa-instagram text-danger"></i>
 					<i class="fa-brands fa-twitter text-info"></i>
 					<i class="fa-brands fa-youtube text-danger"></i>
+					<i class="fa-brands fa-whatsapp text-success"></i>
 				</div>
 			</footer>
 		</div>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
 	margin: 0;
@@ -13,16 +14,36 @@ body {
 	text-decoration: none;
 	transition: 0.2s linear;
 }
-/* 
+
+#earth {
+	width: 22px;
+	height: 22px;
+}
+
+.nav-link {
+	font-size: 1.3rem;
+}
+
 .navbar-brand {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
-.navbar-nav a {
-	font-size: 1.3rem;
+#logo-brand {
+	font-family: "Montserrat", sans-serif;
 }
 
-form input,
-form label {
-	font-size: 1.3rem;
-} */
+.content-body {
+	background: rgb(163, 244, 163);
+	height: 100vh;
+}
+
+body .card:hover {
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+}
+
+/* * FOOTER */
+.social-icons i:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease-in-out;
+}
