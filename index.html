@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="shortcut icon" href="/img/icons8-earth-planet-48.png" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+		<title>Blue Dot Project</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#"><span>Blue</span><span class="text-primary fw-bolder">DOT</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Problems</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Solutions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Blogs</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<!-- <button class="btn btn-primary">Join Us</button> -->
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabel2">Join Us</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalLabel2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel2"><h4>User Application</h4></h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+
+									<div class="modal-body">
+										<!-- <h4>Application User</h4> -->
+										<form>
+											<div class="mb-3">
+												<label for="exampleInputEmail1" class="form-label">Email address:</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+												<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+											</div>
+
+											<div class="mb-3">
+												<label for="exampleInputName" class="form-label">Full Name:</label>
+												<input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Full Name" />
+											</div>
+
+											<!-- <div class="mb-3">
+												<label for="exampleInputPassword1" class="form-label">Password:</label>
+												<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password" />
+											</div> -->
+											<label for="inputPassword5" class="form-label">Password</label>
+											<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter Password" />
+											<div id="passwordHelpBlock" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+
+											<button type="submit" class="btn btn-primary mt-3">Sign-Up</button>
+										</form>
+									</div>
+
+									<!-- <div class="modal-footer">
+										<p>Sign-Up Successful, Thanks for registering with us! Go to <a href="/Components/login.html" class="text-primary">Login</a></p>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<section>
+				<div class="container-fluid d-flex justify-content-between bg-black text-white">
+					<div class="m-auto text text-center p-4">
+						<h1>Our planet faces the interconnected crises of rapid climate change and biodiversity loss.</h1>
+						<button class="mt-4 lead btn btn-light">Read more...</button>
+					</div>
+					<div class="">
+						<img src="/img/hero-earth.jpg" alt="" class="img" />
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="container">
+			<footer>
+				<p class="lead text-center my-auto p-3">Copyright &copy; 2022. All rights reserved.</p>
+				<div class="social-icons text-center h4 d-flex justify-content-center gap-5 pb-2">
+					<i class="fa-brands fa-facebook text-primary"></i>
+					<i class="fa-brands fa-instagram text-danger"></i>
+					<i class="fa-brands fa-twitter text-info"></i>
+					<i class="fa-brands fa-youtube text-danger"></i>
+				</div>
+			</footer>
+		</div>
+
+		<script src="/js/bootstrap.bundle.min.js"></script>
+		<script src="/js/app.js"></script>
+	</body>
+</html>
