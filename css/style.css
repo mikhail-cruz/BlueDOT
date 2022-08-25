@@ -14,7 +14,7 @@ body {
 	text-decoration: none;
 	transition: 0.2s linear;
 }
-
+/* * NAV-BRAND */
 #earth {
 	width: 22px;
 	height: 22px;
@@ -33,7 +33,7 @@ body {
 }
 
 .content-body {
-	background: rgb(163, 244, 163);
+	/* background: rgb(163, 244, 163); */
 	height: 100vh;
 }
 
