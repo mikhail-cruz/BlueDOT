@@ -23,10 +23,6 @@ body {
 	font-size: 1.3rem;
 }
 
-/* .nav-link:hover {
-	text-decoration: underline;
-} */
-
 .navbar-brand {
 	font-size: 1.5rem;
 }
@@ -48,22 +44,8 @@ body {
 	align-items: center;
 }
 
-/* #problems img {
-	width: 100%;
-} */
-
-/* .hero-section img {
-	width: 300px;
-	margin: 0 auto;
-}
-
-.hero-section h1 {
-	width: 100%;
-	text-align: center;
-} */
-
 .start-with-yourself:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	transition: all 0.2s ease-in-out;
 }
 
@@ -79,7 +61,7 @@ body {
 }
 
 /* * index html */
-@media (max-width: 520px) {
+@media (max-width: 576px) {
 	.hero-section {
 		display: flex;
 		flex-direction: column;
@@ -88,9 +70,16 @@ body {
 	}
 }
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
 	#problems .even {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 768px) {
+	.yourself {
+		display: flex;
+		flex-direction: column;
 	}
 }

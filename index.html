@@ -11,6 +11,7 @@
 		<title>Blue Dot Project</title>
 	</head>
 	<body>
+		<!-- * NAVBAR -->
 		<nav class="navbar navbar-expand-lg bg-light shadow-lg">
 			<div class="container">
 				<!-- <a class="navbar-brand" href="#"><span>Blue</span><span class="text-primary fw-bold">DOT</span></a> -->
@@ -29,7 +30,7 @@
 							<a class="nav-link text-dark" href="/html/problems.html">Problems</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+							<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">General Solution</a></li>
 								<li><a class="dropdown-item" href="/html/startwithyourself.html">Start with Yourself</a></li>
@@ -37,9 +38,6 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-dark" href="/html/aboutUs.html">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">Blogs</a>
 						</li>
 					</ul>
 					<form class="d-flex" role="search">
@@ -58,24 +56,47 @@
 									<div class="modal-body">
 										<!-- <h4>Application User</h4> -->
 										<form>
-											<div class="mb-3">
-												<label for="exampleInputEmail1" class="form-label">Email address:</label>
-												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-												<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+											<div class="form-floating mb-3">
+												<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+												<label for="floatingInput">Full Name</label>
 											</div>
 
-											<div class="mb-3">
-												<label for="exampleInputName" class="form-label">Full Name:</label>
-												<input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Full Name" />
+											<div class="form-floating mb-3">
+												<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+												<label for="floatingInput">Email address</label>
 											</div>
 
-											<div class="mb-3">
+											<div class="form-floating mb-3">
 												<label for="inputPassword5" class="form-label">Password</label>
-												<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter Password" />
+												<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" />
 												<div id="passwordHelpBlock" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
 											</div>
 
-											<button type="submit" class="btn btn-primary mt-3">Sign-Up</button>
+											<div class="form-floating mb-3">
+												<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+													<option selected></option>
+													<option value="1">Africa</option>
+													<option value="2">Asia</option>
+													<option value="3">Carribean</option>
+													<option value="3">Central America</option>
+													<option value="3">Europe</option>
+													<option value="3">North America</option>
+													<option value="3">Oceania</option>
+													<option value="3">South America</option>
+												</select>
+												<label for="floatingSelect">Select Region</label>
+											</div>
+
+											<div class="mb-3">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+													<label class="form-check-label" for="invalidCheck"> Agree to terms and conditions </label>
+													<div class="invalid-feedback">You must agree before submitting.</div>
+												</div>
+											</div>
+											<div class="">
+												<button class="btn btn-primary" type="submit">Submit form</button>
+											</div>
 										</form>
 									</div>
 								</div>
@@ -85,14 +106,14 @@
 				</div>
 			</div>
 		</nav>
-
+		<!-- * MAIN BODY -->
 		<div class="container-fluid bg-black">
 			<main class="hero-section">
 				<h1 class="text-center p-3 text-white">Our planet faces the interconnected crises of rapid climate change and biodiversity loss.</h1>
 				<img src="/img/hero-earth.jpg" alt="" class="img-fluid container align-center" />
 			</main>
 		</div>
-
+		<!-- * FOOTER -->
 		<div class="container-fluid shadow-lg">
 			<footer>
 				<p class="text-center my-auto p-3 text-dark">Copyright &copy; 2022. All rights reserved.</p>

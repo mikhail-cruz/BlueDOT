@@ -11,6 +11,7 @@
 		<title>Blue Dot Project</title>
 	</head>
 	<body>
+		<!-- *NAVBAR -->
 		<nav class="navbar navbar-expand-lg bg-light shadow-lg">
 			<div class="container">
 				<a class="navbar-brand" href="#"
@@ -25,10 +26,10 @@
 							<a class="nav-link active text-dark" aria-current="page" href="/index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" href="/html/problems.html">Problems</a>
+							<a class="nav-link text-dark active" href="/html/problems.html">Problems</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+							<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">General Solution</a></li>
 								<li><a class="dropdown-item" href="/html/startwithyourself.html">Start with Yourself</a></li>
@@ -36,9 +37,6 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-dark" href="/html/aboutUs.html">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">Blogs</a>
 						</li>
 					</ul>
 					<form class="d-flex" role="search">
@@ -55,31 +53,50 @@
 									</div>
 
 									<div class="modal-body">
+										<!-- <h4>Application User</h4> -->
 										<form>
-											<div class="mb-3">
-												<label for="exampleInputEmail1" class="form-label">Email address:</label>
-												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-												<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+											<div class="form-floating mb-3">
+												<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+												<label for="floatingInput">Full Name</label>
 											</div>
 
-											<div class="mb-3">
-												<label for="exampleInputName" class="form-label">Full Name:</label>
-												<input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Full Name" />
+											<div class="form-floating mb-3">
+												<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+												<label for="floatingInput">Email address</label>
 											</div>
 
-											<div class="mb-3">
+											<div class="form-floating mb-3">
 												<label for="inputPassword5" class="form-label">Password</label>
-												<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter Password" />
+												<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" />
 												<div id="passwordHelpBlock" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
 											</div>
 
-											<button type="submit" class="btn btn-primary mt-3">Sign-Up</button>
+											<div class="form-floating mb-3">
+												<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+													<option selected></option>
+													<option value="1">Africa</option>
+													<option value="2">Asia</option>
+													<option value="3">Carribean</option>
+													<option value="3">Central America</option>
+													<option value="3">Europe</option>
+													<option value="3">North America</option>
+													<option value="3">Oceania</option>
+													<option value="3">South America</option>
+												</select>
+												<label for="floatingSelect">Select Region</label>
+											</div>
+
+											<div class="mb-3">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+													<label class="form-check-label" for="invalidCheck"> Agree to terms and conditions </label>
+													<div class="invalid-feedback">You must agree before submitting.</div>
+												</div>
+											</div>
+											<div class="">
+												<button class="btn btn-primary" type="submit">Submit form</button>
+											</div>
 										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</form>
 				</div>
 			</div>
 		</nav>
@@ -87,24 +104,24 @@
 		<section id="problems">
 			<div class="container">
 				<!-- *ROW -->
-				<div class="row mt-3">
-					<div class="col-12 col-md-6 my-auto p-3">
+				<div class="row mt-4">
+					<div class="col-12 col-md-6 my-auto px-3">
 						<h3>Land Degradation</h3>
 						<p>
 							Land degradation—the deterioration or loss of the productive capacity of the soils for present and future—is a global challenge that affects everyone through food insecurity, higher food prices, climate change, environmental hazards, and the loss of biodiversity and
 							ecosystem services. Land degradation is happening at an alarming pace, contributing to a dramatic decline in the productivity of croplands and rangelands worldwide.
 						</p>
 					</div>
-					<div class="col-12 col-md-6 my-auto p-3">
-						<img src="/img/plant tree.jpg" alt="land degradation" class="img-fluid" />
+					<div class="col-12 col-md-6 my-auto px-3">
+						<img src="/img/land.p 3.jpg" alt="land degradation" class="img-fluid" />
 					</div>
 				</div>
 				<!-- *ROW -->
-				<div class="row mt-3 even">
-					<div class="col-12 col-md-6 my-auto p-3">
-						<img src="/img/plant tree.jpg" alt="biodiversity loss" class="img-fluid" />
+				<div class="row mt-4 even">
+					<div class="col-12 col-md-6 my-auto px-3">
+						<img src="/img/bio2.jpg" alt="biodiversity loss" class="img-fluid" />
 					</div>
-					<div class="col-12 col-md-6 my-auto p-3">
+					<div class="col-12 col-md-6 my-auto px-3">
 						<h3>Biodiversity Loss</h3>
 						<p>
 							Biodiversity is traditionally defined as the variety of life on Earth in all its forms. It comprises the number of species, their genetic variation and the interaction of these lifeforms within complex ecosystems. Healthy ecosystems provide us with many essentials we take
@@ -114,8 +131,8 @@
 					</div>
 				</div>
 				<!-- *ROW -->
-				<div class="row mt-3">
-					<div class="col-12 col-md-6 my-auto p-3">
+				<div class="row mt-4">
+					<div class="col-12 col-md-6 my-auto px-3">
 						<h3>Air Pollution</h3>
 						<p>
 							Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere. Household combustion devices, motor vehicles, industrial facilities and forest fires are common
@@ -123,16 +140,16 @@
 							mortality.
 						</p>
 					</div>
-					<div class="col-12 col-md-6 my-auto p-3">
-						<img src="/img/plant tree.jpg" alt="air pollution" class="img-fluid" />
+					<div class="col-12 col-md-6 my-auto px-3">
+						<img src="/img/air.p 1.jpg" alt="air pollution" class="img-fluid" />
 					</div>
 				</div>
 				<!-- *ROW -->
-				<div class="row mt-3">
-					<div class="col-12 col-md-6 my-auto p-3">
-						<img src="/img/plant tree.jpg" alt="water pollution" class="img-fluid" />
+				<div class="row mt-4 even">
+					<div class="col-12 col-md-6 my-auto px-3">
+						<img src="/img/water.p 2.jpg" alt="water pollution" class="img-fluid" />
 					</div>
-					<div class="col-12 col-md-6 my-auto p-3">
+					<div class="col-12 col-md-6 my-auto px-3">
 						<h3>Water Pollution</h3>
 						<p>
 							Water pollution occurs when harmful substances—often chemicals or microorganisms—contaminate a stream, river, lake, ocean, aquifer, or other body of water, degrading water quality and rendering it toxic to humans or the environment. Our rivers, reservoirs, lakes, and seas
@@ -141,21 +158,21 @@
 					</div>
 				</div>
 				<!-- *ROW -->
-				<div class="row mt-3">
-					<div class="col-12 col-md-6 my-auto p-3">
+				<div class="row mt-4">
+					<div class="col-12 col-md-6 my-auto px-3">
 						<h3>Climate Change</h3>
 						<p>
 							Sea levels are rising and oceans are becoming warmer. Longer, more intense droughts threaten crops, wildlife and freshwater supplies. Climate change poses a fundamental threat to the places, species and people's livelihoods WWF works to protect. To adequately address this
 							crisis we must urgently reduce carbon pollution and prepare for the consequences of global warming, which we are already experiencing.
 						</p>
 					</div>
-					<div class="col-12 col-md-6 my-auto p-3">
-						<img src="/img/plant tree.jpg" alt="climate change" class="img-fluid" />
+					<div class="col-12 col-md-6 my-auto px-3">
+						<img src="/img/climate 2.jpg" alt="climate change" class="img-fluid" />
 					</div>
 				</div>
 			</div>
 		</section>
-
+		<!-- * FOOTER -->
 		<div class="container-fluid shadow-lg mt-5">
 			<footer>
 				<p class="text-center my-auto p-3 text-dark">Copyright &copy; 2022. All rights reserved.</p>
