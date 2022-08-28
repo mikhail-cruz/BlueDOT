@@ -77,6 +77,27 @@ body {
 	font-family: "Acme", sans-serif;
 }
 
+/* * PROBLEMS */
+#more {
+	display: none;
+}
+
+#more2 {
+	display: none;
+}
+
+#more3 {
+	display: none;
+}
+
+#more4 {
+	display: none;
+}
+
+#more5 {
+	display: none;
+}
+
 /* * FOOTER */
 .social-icons i:hover {
 	transform: scale(1.1);
