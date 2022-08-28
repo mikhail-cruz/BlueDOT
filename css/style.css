@@ -14,7 +14,9 @@ body {
 	border: none;
 	text-decoration: none;
 }
-/* * NAV-BRAND */
+/* * NAVBAR */
+
+/* *navbar logo */
 #earth {
 	width: 22px;
 	height: 22px;
@@ -31,10 +33,6 @@ body {
 #logo-brand {
 	font-family: "Montserrat", sans-serif;
 }
-
-/* .content-body {
-	height: 100vh;
-} */
 
 /* *MAIN BODY */
 
@@ -100,9 +98,29 @@ body {
 
 /* * FOOTER */
 .social-icons i:hover {
-	transform: scale(1.1);
+	transform: scale(1.2);
 	transition: all 0.2s ease-in-out;
 }
+
+.terms p {
+	margin: 0;
+	padding: 0;
+}
+
+#terms-policy {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.newsletter {
+	vertical-align: middle;
+}
+
+.newsletter input {
+	max-width: 25rem;
+}
+
+/* * MEDIA QUERIES */
 
 /* * index html */
 @media (max-width: 576px) {
@@ -114,6 +132,7 @@ body {
 	}
 }
 
+/* * problems */
 @media (max-width: 768px) {
 	#problems .even {
 		display: flex;
@@ -121,6 +140,7 @@ body {
 	}
 }
 
+/* *start with yourself */
 @media (max-width: 768px) {
 	.yourself {
 		display: flex;
@@ -128,8 +148,18 @@ body {
 	}
 }
 
+/* * about us */
 @media (max-width: 768px) {
 	#mission-vision {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* * FOOTER */
+
+@media (max-width: 768px) {
+	footer .upper-section {
 		display: flex;
 		flex-direction: column;
 	}
