@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 * {
 	margin: 0;
@@ -49,9 +50,31 @@ body {
 	transition: all 0.2s ease-in-out;
 }
 
+#aboutUs-section {
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 5px;
+}
+
 #aboutUs img {
 	width: 60px;
 	height: 60px;
+}
+
+#mission-vision {
+	display: flex;
+}
+
+#vision {
+	flex: 1;
+}
+
+#mission {
+	flex: 1;
+}
+
+.acme {
+	font-family: "Acme", sans-serif;
 }
 
 /* * FOOTER */
@@ -79,6 +102,13 @@ body {
 
 @media (max-width: 768px) {
 	.yourself {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	#mission-vision {
 		display: flex;
 		flex-direction: column;
 	}
