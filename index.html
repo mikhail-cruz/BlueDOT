@@ -12,9 +12,8 @@
 	</head>
 	<body>
 		<!-- * NAVBAR -->
-		<nav class="navbar navbar-expand-lg bg-secondary bg-opacity-25">
+		<nav class="container-fluid navbar navbar-expand-lg bg-secondary bg-opacity-25">
 			<div class="container">
-				<!-- <a class="navbar-brand" href="#"><span>Blue</span><span class="text-primary fw-bold">DOT</span></a> -->
 				<a class="navbar-brand" href="#"
 					><span id="logo-brand" class="">Blue</span><span class="text-primary fw-bold">D<img src="/img/earth-icon.svg" alt="" id="earth" />T</span></a
 				>
@@ -118,19 +117,118 @@
 		<!-- * MAIN BODY -->
 		<div class="container-fluid bg-black">
 			<main class="hero-section">
-				<h1 class="text-center p-3 text-white">Our planet faces the interconnected crises of rapid climate change and biodiversity loss.</h1>
-				<img src="/img/hero-earth.jpg" alt="" class="img-fluid container align-center" />
+				<h1 id="hero-sub" class="p-3 text-white">Our planet faces the interconnected crises of rapid climate change and biodiversity loss.</h1>
+				<img id="hero-sub" src="/img/hero-earth.jpg" alt="" class="img-fluid" />
 			</main>
 		</div>
+
+		<section class="sub-section container d-flex p-3 gap-3">
+			<div class="left">
+				<img src="/img/save earth 1.jpg" alt="save earth" class="img-fluid rounded shadow-sm" />
+			</div>
+			<div class="right my-auto">
+				<h1 class="p-2">
+					The Fate of Our Planet <br />
+					is in Our Hands
+				</h1>
+				<blockquote class="">&quot;You cannot get through a single day without having an impact on the world around you. What you do makes a difference and you have to decide what kind of a difference you want to make.&quot;</blockquote>
+			</div>
+		</section>
+
+		<section class="my-3 text-uppercase">
+			<div class="illustrations container d-flex justify-content-evenly">
+				<div class="box d-inline-block p-3 text-center">
+					<i class="fas fa-users text-primary h3 mx-auto"></i>
+					<h3>100+</h3>
+					<p>Members</p>
+				</div>
+
+				<div class="box d-inline-block p-3 text-center">
+					<i class="fas fa-tree text-success h3"></i>
+					<h3>500+</h3>
+					<p>Trees Planted</p>
+				</div>
+
+				<div class="box d-inline-block p-3 text-center">
+					<i class="fas fa-paw text-danger h3"></i>
+					<h3>220+</h3>
+					<p>Animals Saved</p>
+				</div>
+
+				<div class="box d-inline-block p-3 text-center">
+					<i class="fas fa-donate text-warning h3"></i>
+					<h3>20+</h3>
+					<p>Donators</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="donation-section" class="p-3 shadow-sm bg-secondary bg-opacity-25 rounded">
+			<h2 class="text-center mb-3 fw-normal"><i class="fa-solid fa-hand-holding-dollar text-primary me-2"></i>Donation Form</h2>
+			<form class="row g-3 needs-validation" novalidate>
+				<div class="col-md-6">
+					<label for="validationCustom01" class="form-label">First name</label>
+					<input type="text" class="form-control" id="validationCustom01" value="" required placeholder="Enter First Name" />
+					<div class="valid-feedback">Looks good!</div>
+				</div>
+				<div class="col-md-6">
+					<label for="validationCustom02" class="form-label">Last name</label>
+					<input type="text" class="form-control" id="validationCustom02" value="" required placeholder="Enter Last Name" />
+					<div class="valid-feedback">Looks good!</div>
+				</div>
+				<div class="col-md-5">
+					<label for="validationCustom03" class="form-label">Phone Number</label>
+					<input type="tel" class="form-control" id="validationCustom03" required placeholder="Enter number" />
+					<div class="invalid-feedback">Please provide a valid city.</div>
+				</div>
+				<div class="col-md-3">
+					<label for="validationCustom04" class="form-label">Amount</label>
+					<select class="form-select" id="validationCustom04" required>
+						<option selected disabled value="">Select</option>
+						<option>&#36;5</option>
+						<option>&#36;10</option>
+						<option>&#36;15</option>
+						<option>&#36;20</option>
+						<option>&#36;25</option>
+						<option>&#36;30</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label for="validationCustom04" class="form-label">Mode of Payment</label>
+					<select class="form-select" id="validationCustom04" required>
+						<option selected disabled value="">Select</option>
+						<option>Cash</option>
+						<option>Personal Cheque</option>
+						<option>Credit Card</option>
+						<option>Debit Card</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlTextarea1" class="form-label">Donor Notes</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Message(Optional)"></textarea>
+				</div>
+				<div class="col-12">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+						<label class="form-check-label" for="invalidCheck"> Agree to terms and conditions </label>
+						<div class="invalid-feedback">You must agree before submitting.</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<button class="btn btn-primary" type="submit">Send Donation</button>
+				</div>
+			</form>
+		</section>
+
 		<!-- * FOOTER -->
-		<div class="container-fluid bg-secondary bg-opacity-25">
+		<div class="container-fluid bg-secondary bg-opacity-25 mt-5">
 			<footer>
 				<div>
 					<form>
 						<div class="container d-flex newsletter justify-content-center align-items-center gap-1 pt-4">
 							<h4 class="align-middle mb-0 fw-light">Newsletter</h4>
 							<input class="form-control" type="email" placeholder="Enter email" name="email" />
-							<button class="btn btn-primary p-1" type="submit">Submit</button>
+							<button class="btn btn-primary p-1" type="submit">Subscribe</button>
 						</div>
 					</form>
 				</div>
@@ -146,7 +244,7 @@
 						</div>
 					</div>
 
-					<div class="d-flex flex-column justify-content-center text-center terms p-3">
+					<div class="container d-flex flex-column justify-content-center text-center terms p-3">
 						<p id="terms-policy"><a href="#" class="text-dark text-decoration-none">Terms</a> | <a href="#" class="text-dark text-decoration-none">Privacy Policy</a></p>
 						<p>Copyright &copy; 2022. All rights reserved.</p>
 						<p>Blue<span class="text-primary">DOT</span> Philippines, Inc.</p>
