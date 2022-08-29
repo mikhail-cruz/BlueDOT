@@ -112,6 +112,85 @@
 							</div>
 						</div>
 					</form>
+					<!-- * TEST -->
+					<form class="p-1">
+						<!-- <button class="btn btn-primary">Join Us</button> -->
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donate">Donate</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="donate" tabindex="-1" aria-labelledby="donate" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="donate"><h4>Donation Form</h4></h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+
+									<div class="modal-body">
+										<!-- <h4>Application User</h4> -->
+										<form class="row g-3 needs-validation" novalidate>
+											<div class="mb-2">
+												<label for="validationCustom01" class="form-label">Full Name</label>
+												<input type="text" class="form-control" id="validationCustom01" value="" required placeholder="" />
+												<div class="valid-feedback">Looks good!</div>
+											</div>
+											<div class="mb-2">
+												<label for="validationCustom03" class="form-label">Phone Number</label>
+												<input type="tel" class="form-control" id="validationCustom03" required placeholder="" />
+												<div class="invalid-feedback">Please provide a valid city.</div>
+											</div>
+											<div class="mb-2">
+												<label for="validationCustom04" class="form-label">Amount</label>
+												<select class="form-select" id="validationCustom04" required>
+													<option selected disabled value="">Select</option>
+													<option>&#36;5</option>
+													<option>&#36;10</option>
+													<option>&#36;15</option>
+													<option>&#36;20</option>
+													<option>&#36;25</option>
+													<option>&#36;30</option>
+												</select>
+											</div>
+											<div class="mb-2">
+												<label for="validationCustom04" class="form-label">Mode of Payment</label>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="payment" id="1" checked />
+													<label class="form-check-label" for="1">Cash</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="payment" id="2" />
+													<label class="form-check-label" for="2">Personal Cheque</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="payment" id="3" />
+													<label class="form-check-label" for="3">Credit Card</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="payment" id="4" />
+													<label class="form-check-label" for="4">Debit Card</label>
+												</div>
+											</div>
+											<div class="mb-3">
+												<label for="exampleFormControlTextarea1" class="form-label">Donor Notes</label>
+												<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message(Optional)"></textarea>
+											</div>
+											<div class="mb-3">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+													<label class="form-check-label" for="invalidCheck"> Agree to terms and conditions </label>
+													<div class="invalid-feedback">You must agree before submitting.</div>
+												</div>
+											</div>
+											<div class="">
+												<button class="btn btn-primary" type="submit">Send Donation</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!-- * TEST -->
 				</div>
 			</div>
 		</nav>
