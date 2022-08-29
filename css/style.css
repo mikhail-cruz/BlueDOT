@@ -15,7 +15,7 @@ body {
 }
 /* * NAVBAR */
 
-/* *navbar logo */
+/* Navbar Logo */
 #earth {
 	width: 22px;
 	height: 22px;
@@ -87,9 +87,7 @@ body {
 }
 
 .box {
-	/* border: 1px solid black; */
 	width: 10rem;
-	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -132,22 +130,69 @@ body {
 	font-weight: 600;
 }
 
-.newsletter {
-	vertical-align: middle;
+/* * TESTIMONIALS */
+
+.user-star p {
+	margin-bottom: 0;
 }
 
-.newsletter input {
-	max-width: 25rem;
+#testimonials img {
+	height: 50px;
+	height: 50px;
 }
 
-#donation-section {
-	margin: 0 auto;
-	width: 80%;
+.user-star .star {
+	margin-top: 0;
+}
+
+/* * NEWSLETTER */
+
+.email-box {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+.email-box i {
+	width: 40px;
+	line-height: 40px;
+}
+
+.input-box {
+	width: 0;
+	transition: all 0.8s ease;
+}
+.email-box:hover > .input-box,
+.input-box:focus {
+	width: 280px;
+	padding: 0 10px;
+}
+
+/* * GENERAL SOLUTION */
+#solution li {
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	line-height: 1.6;
+}
+
+#solution li:before {
+	content: "\2714";
+	color: green;
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+.solution-card {
+	width: 50%;
+}
+
+.solution-img {
+	width: 50%;
 }
 
 /* * MEDIA QUERIES */
 
-/* * small screen */
+/* * SMALL SCREEN */
 @media (max-width: 576px) {
 	nav {
 		width: 100%;
@@ -189,7 +234,7 @@ body {
 		display: block;
 	}
 }
-/* *medium screen */
+/* * MEDIUM SCREEN */
 @media (max-width: 768px) {
 	.hero-section {
 		display: flex;
@@ -246,7 +291,7 @@ body {
 	}
 }
 
-/* * problems */
+/* * PROBLEMS */
 @media (max-width: 768px) {
 	#problems .even {
 		display: flex;
@@ -254,7 +299,7 @@ body {
 	}
 }
 
-/* *start with yourself */
+/* * START WITH YOURSELF */
 @media (max-width: 768px) {
 	.yourself {
 		display: flex;
@@ -262,7 +307,7 @@ body {
 	}
 }
 
-/* * about us */
+/* * ABOUT US */
 @media (max-width: 768px) {
 	#mission-vision {
 		display: flex;
@@ -271,10 +316,44 @@ body {
 }
 
 /* * FOOTER */
-
 @media (max-width: 768px) {
 	footer .upper-section {
 		display: flex;
 		flex-direction: column;
 	}
+}
+
+/* * SOLUTION MEDIA QUERY */
+@media (max-width: 1200px) {
+	#solution section {
+		display: flex;
+		flex-direction: column;
+	}
+	.solution-card {
+		width: 100%;
+	}
+
+	.solution-img {
+		width: 100%;
+	}
+
+	#solution .even {
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 768px) {
+	footer {
+		padding: 1px;
+	}
+}
+
+/* * FOR TESTING ONLY */
+footer {
+	position: relative;
+}
+.footer-absolute {
+	position: absolute;
+	top: 0;
+	left: 500px;
 }
