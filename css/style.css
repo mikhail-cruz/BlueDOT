@@ -347,13 +347,3 @@ body {
 		padding: 1px;
 	}
 }
-
-/* * FOR TESTING ONLY */
-footer {
-	position: relative;
-}
-.footer-absolute {
-	position: absolute;
-	top: 0;
-	left: 500px;
-}
