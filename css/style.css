@@ -170,14 +170,14 @@ body {
 /* * GENERAL SOLUTION */
 #solution li {
 	list-style-type: none;
-	margin-bottom: 5px;
+	margin-bottom: 0;
 	margin-left: -30px;
 	line-height: 1.6;
 }
 
 #solution li:before {
 	content: "\2714";
-	color: green;
+	color: rgb(0, 255, 0);
 	margin-right: 5px;
 	font-size: 20px;
 }
